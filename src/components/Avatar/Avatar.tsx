@@ -33,7 +33,9 @@ const Avatar: React.FC<IAvatarProps> = (props) => {
                 <AntdAvatar size={typeof size === 'string' ? Number(size.split('px')[0]) : size}>{name?.substr(0, 2)}</AntdAvatar>
             )}
 
-            <Button type='primary'>test</Button>
+            <Button size='large' type='primary'>
+                test
+            </Button>
 
             {!hideDetail && (
                 <Detail>
