@@ -5,9 +5,16 @@
 	"engines": {
 		"node": "14"
 	},
+	"repository": {
+		"url": "https://gitlab.com/bitkub-blockchain/framework/uikit-sdk",
+		"type": "git"
+	},
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
 	"scripts": {
+		"build": "tsc",
 		"storybook": "start-storybook -p 6006 -s public",
-		"build-storybook": "build-storybook -o ./dist --quiet",
+		"build-storybook": "build-storybook --quiet",
 		"eslint": "eslint . --ext .js,.jsx,.tsx,.ts"
 	},
 	"dependencies": {
