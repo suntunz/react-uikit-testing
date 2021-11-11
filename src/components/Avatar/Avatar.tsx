@@ -1,11 +1,12 @@
+import { Input } from 'antd'
+
 export interface IAvatarProps {}
 
-const Avatar: React.FC<IAvatarProps> = () => {
-    return <div>test</div>
+const Avatar: React.FC<IAvatarProps> = (props) => {
+    const { ...rest } = props
+    return <Input {...rest} />
 }
 
-Avatar.defaultProps = {
-    size: 50,
-}
+Avatar.defaultProps = {}
 
 export default Avatar
