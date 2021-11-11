@@ -12,7 +12,6 @@ module.exports = {
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         'storybook-addon-designs',
-        'storybook-addon-styled-component-theme/dist/preset',
         {
             name: '@storybook/preset-ant-design',
             options: {

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Meta } from '@storybook/react'
-import styled from 'styled-components'
 
 import { IconProps } from '../../assets/icons/types/Icon.interface'
 
@@ -33,27 +32,16 @@ const components: { [key: string]: any } = context.keys().reduce((accum, path) =
 
 export const Default: React.FC<IconProps> = ({ size, color }) => {
     return (
-        <IconContainer>
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {Object.keys(components).map((file, index) => {
                 const Icon = components[file].default
                 return (
-                    <IconWrapper key={index}>
+                    <div key={index} style={{ display: 'flex', flexDirection: 'column', margin: '10px' }}>
                         <Icon color={color} size={size} />
                         {file}
-                    </IconWrapper>
+                    </div>
                 )
             })}
-        </IconContainer>
+        </div>
     )
 }
-
-const IconContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-`
-
-const IconWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-`
