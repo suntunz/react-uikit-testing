@@ -12,6 +12,7 @@ module.exports = {
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         'storybook-addon-designs',
+        'storybook-tailwind-dark-mode',
         {
             name: '@storybook/preset-ant-design',
             options: {

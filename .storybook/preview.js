@@ -1,4 +1,7 @@
 import React from 'react'
+
+import './tailwind.css'
+
 import '../src/styles/index.less'
 
 const globalDecorator = (StoryFn) => <StoryFn />
