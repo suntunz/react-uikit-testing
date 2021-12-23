@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react'
 
-import Title, { ITitleProps } from './Title'
+import Title, { ITitleProps } from '../Title'
 
 export default {
     title: 'Main/Title',

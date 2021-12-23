@@ -379,9 +379,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-.text-gray-700 {
+.text-\[36px\] {
+  font-size: 36px;
+}
+.text-gray-600 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
 

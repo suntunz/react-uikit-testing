@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component should match previous snapshot 1`] = `
+<h1
+  className="text-[36px] text-gray-600 md:text-purple-800 lg:text-yellow-700 xl:text-bitkub-600 2xl:text-pink-700"
+>
+  Test
+</h1>
+`;
