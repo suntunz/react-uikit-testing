@@ -15,7 +15,7 @@ const commonConfig = {
             version: 'detect',
         },
     },
-    plugins: ['@typescript-eslint', 'import', 'react-hooks'],
+    plugins: ['@typescript-eslint', 'import', 'react-hooks', 'tailwindcss'],
 }
 
 const commonExtends = ['prettier', 'plugin:import/recommended']
