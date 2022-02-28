@@ -11,4 +11,6 @@ export default {
 const Template: Story<IButtonProps> = (args) => <Button {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+    children: 'Save',
+}

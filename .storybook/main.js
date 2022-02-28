@@ -13,21 +13,6 @@ module.exports = {
         '@storybook/addon-essentials',
         'storybook-addon-designs',
         'storybook-tailwind-dark-mode',
-        {
-            name: '@storybook/preset-ant-design',
-            options: {
-                lessOptions: {
-                    modifyVars: { ...palette },
-                },
-            },
-        },
-        {
-            name: '@storybook/preset-create-react-app',
-            options: {
-                craOverrides: {
-                    fileLoaderExcludes: ['less'],
-                },
-            },
-        },
+        '@storybook/preset-create-react-app',
     ],
 }
