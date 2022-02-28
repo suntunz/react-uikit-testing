@@ -5,10 +5,12 @@ module.exports = {
     darkMode: 'media', // or 'media' or 'class'
     theme: {
         extend: {
-            colors: {
-                bitkub: {
-                    600: '#02d667',
-                },
+            textColor: {
+                base: 'var(--color-text-base)',
+                light: 'var(--color-text-light)',
+            },
+            fontSize: {
+                tiny: 'var(--font-size-tiny)',
             },
         },
     },

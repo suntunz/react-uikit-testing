@@ -17,7 +17,7 @@
 		"build-style": "postcss ./src/styles/tailwind.less -o ./dist/style.css",
 		"dev": "start-storybook -p 6006 -s public",
 		"storybook": "yarn build-storybook-style && start-storybook -p 6006",
-		"build-storybook-style": "postcss ./src/styles/tailwind.less -o ./.storybook/tailwind.css",
+		"build-storybook-style": "postcss ./src/styles/tailwind.css -o ./.storybook/tailwind.css",
 		"build-storybook": "build-storybook --quiet",
 		"eslint": "eslint . --ext .js,.jsx,.tsx,.ts",
 		"tailwind-config-viewer": "tailwind-config-viewer -o",

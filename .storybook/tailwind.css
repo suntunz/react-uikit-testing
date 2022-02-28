@@ -379,6 +379,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+    :root {
+        /* text color */
+        --color-text-base: #000000;
+        --color-text-light: #ffffff;
+        --color-text-primary: #0eaa61;
+        --color-text-secondary: #1b2d55;
+
+        /* font size */
+        --font-size-tiny: 10px;
+    }
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -437,6 +447,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-medium {
   font-weight: 500;
 }
+.text-base {
+  color: var(--color-text-base);
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -483,13 +496,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-yellow-700 {
     --tw-text-opacity: 1;
     color: rgb(161 98 7 / var(--tw-text-opacity));
-  }
-}
-@media (min-width: 1280px) {
-
-  .xl\:text-bitkub-600 {
-    --tw-text-opacity: 1;
-    color: rgb(2 214 103 / var(--tw-text-opacity));
   }
 }
 @media (min-width: 1536px) {
