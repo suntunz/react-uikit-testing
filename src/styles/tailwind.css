@@ -5,10 +5,10 @@
 @layer base {
     :root {
         /* text color */
-        --color-text-base: #000000;
-        --color-text-light: #ffffff;
-        --color-text-primary: #0eaa61;
-        --color-text-secondary: #1b2d55;
+        --text-color-base: #000000;
+        --text-color-light: #ffffff;
+        --text-color-primary: #0eaa61;
+        --text-color-secondary: #1b2d55;
 
         /* font size */
         --font-size-tiny: 10px;

@@ -6,8 +6,10 @@ module.exports = {
     theme: {
         extend: {
             textColor: {
-                base: 'var(--color-text-base)',
-                light: 'var(--color-text-light)',
+                'color-base': 'var(--text-color-base)',
+                primary: 'var(--text-color-primary)',
+                secondary: 'var(--text-color-secondary)',
+                light: 'var(--text-color-light)',
             },
             fontSize: {
                 tiny: 'var(--font-size-tiny)',

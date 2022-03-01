@@ -14,7 +14,7 @@
 	"scripts": {
 		"prebuild": "rm -rf ./dist",
 		"build": "tsc && yarn build-style",
-		"build-style": "postcss ./src/styles/tailwind.less -o ./dist/style.css",
+		"build-style": "postcss ./src/styles/tailwind.css -o ./dist/style.css ",
 		"dev": "start-storybook -p 6006 -s public",
 		"storybook": "yarn build-storybook-style && start-storybook -p 6006",
 		"build-storybook-style": "postcss ./src/styles/tailwind.css -o ./.storybook/tailwind.css",
