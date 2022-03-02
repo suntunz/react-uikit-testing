@@ -41,41 +41,31 @@ export interface ITextProps {
 const Text: React.FC<ITextProps> = (props) => {
     const { text, size = 'base', color = 'base', fontFamily = '', className = null } = props
 
-    const allowFontSize = ['tiny', 'xs', 'sm', 'base', 'lg', 'xl']
-    const allowFontFamily = ['sans', 'serif', 'mono']
-    const allowColor = ['base', 'primary', 'secondary', 'red', 'yellow']
+    const fontSizeClass = switchCase(size, {
+        tiny: 'text-tiny',
+        xs: 'text-xs',
+        sm: 'text-sm',
+        base: 'text-base',
+        lg: 'text-lg',
+        xl: 'text-xl',
+        default: '',
+    })
 
-    const fontSizeClass = allowFontSize.includes(size)
-        ? switchCase(size, {
-              tiny: 'text-tiny',
-              xs: 'text-xs',
-              sm: 'text-sm',
-              base: 'text-base',
-              lg: 'text-lg',
-              xl: 'text-xl',
-              default: 'text-base',
-          })
-        : ''
+    const fontFamilyClass = switchCase(fontFamily, {
+        sans: 'font-sans',
+        serif: 'font-serif',
+        mono: 'font-mono',
+        default: '',
+    })
 
-    const fontFamilyClass = allowFontFamily.includes(fontFamily)
-        ? switchCase(fontFamily, {
-              sans: 'font-sans',
-              serif: 'font-serif',
-              mono: 'font-mono',
-              default: 'font-sans',
-          })
-        : ''
-
-    const fontColorClass = allowColor.includes(color)
-        ? switchCase(color, {
-              base: 'text-color-base',
-              primary: 'text-primary',
-              secondary: 'text-secondary',
-              red: 'text-red-400',
-              yellow: 'text-amber-300',
-              default: 'text-color-base',
-          })
-        : ''
+    const fontColorClass = switchCase(color, {
+        base: 'text-color-base',
+        primary: 'text-primary',
+        secondary: 'text-secondary',
+        red: 'text-red-400',
+        yellow: 'text-amber-300',
+        default: '',
+    })
 
     const classNames = [fontSizeClass, fontFamilyClass, fontColorClass, className].join(' ').trim()
 
