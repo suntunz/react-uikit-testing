@@ -13,4 +13,17 @@
         /* font size */
         --font-size-tiny: 10px;
     }
+
+    h1 {
+        @apply text-2xl;
+    }
+
+    .dark {
+        @apply text-slate-50;
+        @apply bg-slate-900;
+        --text-color-base: theme('colors.slate.50');
+        --text-color-light: theme('colors.slate.50');
+        --text-color-primary: theme('colors.slate.50');
+        --text-color-secondary: theme('colors.slate.50');
+    }
 }

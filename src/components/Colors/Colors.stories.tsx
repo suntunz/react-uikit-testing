@@ -12,7 +12,7 @@ const Colors = () => {
                 ([color, palette], index) =>
                     typeof palette === 'object' && (
                         <Fragment key={index}>
-                            <h1 className='mb-1 text-3xl'>{color}</h1>
+                            <h1 className='mb-1'>{color}</h1>
                             <div className='flex pb-4 mb-4 space-y-3 sm:space-y-0 sm:space-x-4 text-sm border-b border-b-black'>
                                 {Object.entries(palette).map(([thicken, colorCode], key) => (
                                     <div className='flex flex-col flex-1' key={key}>
