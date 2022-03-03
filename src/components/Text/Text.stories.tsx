@@ -45,6 +45,7 @@ const Template: Story<ITextProps> = (args) => {
             <Text {...args} color='secondary' size='xl' text='With secondary color' />
             <br />
             <Text {...args} className='text-3xl' color='red' text='With custom classname' />
+            <Text {...args} className='text-3xl text-brown-500' text='With custom classname color brown' />
         </div>
     )
 }
