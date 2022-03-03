@@ -6,5 +6,6 @@ module.exports = {
         'storybook-addon-designs',
         'storybook-tailwind-dark-mode',
         '@storybook/preset-create-react-app',
+        'storybook-design-token',
     ],
 }

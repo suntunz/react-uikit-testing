@@ -4,13 +4,19 @@
 
 @layer base {
     :root {
-        /* text color */
+        /**
+        * @tokens Text Colors
+        * @presenter Color
+        */
         --text-color-base: #000000;
         --text-color-light: #ffffff;
         --text-color-primary: #0eaa61;
         --text-color-secondary: #1b2d55;
 
-        /* font size */
+        /**
+        * @tokens Font Sizes
+        * @presenter FontSize
+        */
         --font-size-tiny: 10px;
     }
 
@@ -21,6 +27,9 @@
     .dark {
         @apply text-slate-50;
         @apply bg-slate-900;
+        /** 
+        * @tokens Dark Theme
+        */
         --text-color-base: theme('colors.slate.50');
         --text-color-light: theme('colors.slate.50');
         --text-color-primary: theme('colors.slate.50');
