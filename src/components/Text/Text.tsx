@@ -41,8 +41,6 @@ export interface ITextProps {
 const Text: React.FC<ITextProps> = (props) => {
     const { text, size, color, fontFamily = '', className = null } = props
 
-    console.log('ts')
-
     const fontSizeClass = switchCase(size, {
         tiny: 'text-tiny',
         xs: 'text-xs',
