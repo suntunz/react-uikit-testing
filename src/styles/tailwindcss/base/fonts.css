@@ -1,0 +1,9 @@
+@layer base {
+    .font-size-extra-small {
+        @apply text-xs;
+    }
+
+    .font-size-small {
+        @apply text-sm;
+    }
+}

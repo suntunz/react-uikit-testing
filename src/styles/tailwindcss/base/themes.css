@@ -1,0 +1,10 @@
+@layer base {
+    .dark {
+        @apply text-slate-50;
+        @apply bg-slate-900;
+        --text-color-base: var(--text-color-dark-theme);
+        --text-color-light: var(--text-color-dark-theme);
+        --text-color-primary: var(--text-color-dark-theme);
+        --text-color-secondary: var(--text-color-dark-theme);
+    }
+}

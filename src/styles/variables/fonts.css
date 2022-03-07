@@ -1,0 +1,10 @@
+@layer base {
+    :root {
+        /**
+        * @tokens Font Sizes
+        * @presenter FontSize
+        */
+        --font-size-tiny: 10px;
+        --font-size-small: 12px;
+    }
+}

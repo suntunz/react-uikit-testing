@@ -1,0 +1,8 @@
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+    h6 {
+        @apply text-tiny;
+    }
+}

@@ -1,0 +1,7 @@
+/* tailwindcss base */
+@import 'tailwindcss/base';
+@import-glob './variables/*.css';
+@import-glob './tailwindcss/base/*.css';
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

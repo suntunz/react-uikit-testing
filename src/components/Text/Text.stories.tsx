@@ -83,7 +83,7 @@ const Template: Story<ITextProps> = (args) => {
             <h1>Heading H1</h1>
             <h6>Heading H6</h6>
             <Text {...args} className='font-size-small'>
-                With custom classname color brown
+                font size small
             </Text>
         </div>
     )

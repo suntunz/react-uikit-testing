@@ -7106,7 +7106,7 @@ fast-glob@^2.2.6:
     merge2 "^1.2.3"
     micromatch "^3.1.10"
 
-fast-glob@^3.1.1, fast-glob@^3.2.11, fast-glob@^3.2.5, fast-glob@^3.2.7, fast-glob@^3.2.9:
+fast-glob@^3.1.1, fast-glob@^3.2.11, fast-glob@^3.2.4, fast-glob@^3.2.5, fast-glob@^3.2.7, fast-glob@^3.2.9:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.11.tgz#a1172ad95ceb8a16e20caa5c5e56480e5129c1d9"
   integrity sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==
@@ -7131,6 +7131,11 @@ fast-levenshtein@^2.0.6, fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
+
+fast-sort@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/fast-sort/-/fast-sort-2.2.0.tgz#20903763531fbcbb41c9df5ab1bf5f2cefc8476a"
+  integrity sha512-W7zqnn2zsYoQA87FKmYtgOsbJohOrh7XrtZrCVHN5XZKqTBTv5UG+rSS3+iWbg/nepRQUOu+wnas8BwtK8kiCg==
 
 fastq@^1.6.0:
   version "1.13.0"
@@ -11800,6 +11805,15 @@ postcss-image-set-function@^3.0.1:
   dependencies:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
+
+postcss-import-ext-glob@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-import-ext-glob/-/postcss-import-ext-glob-2.0.1.tgz#9e22f9fc9722f7e7206fde77d594e93f6c57163e"
+  integrity sha512-cCvzsZBPuhLCOAfkPeBnJ31uz5azlAjNb5Aug1f2nlomgZK+WD7Uwfrk+epFU9PI20rsMAineDUK4Ty+jEQHcg==
+  dependencies:
+    fast-glob "^3.2.4"
+    fast-sort "^2.2.0"
+    postcss-value-parser "^4.1.0"
 
 postcss-import@^14.0.2:
   version "14.0.2"

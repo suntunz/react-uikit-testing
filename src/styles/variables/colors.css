@@ -1,0 +1,13 @@
+@layer base {
+    :root {
+        /**
+        * @tokens Text Colors
+        * @presenter Color
+        */
+        --text-color-base: #000000;
+        --text-color-primary: #0eaa61;
+        --text-color-secondary: #1b2d55;
+        --text-color-light: #fafafa;
+        --text-color-dark-theme: #f6f9fc;
+    }
+}
