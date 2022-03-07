@@ -379,31 +379,48 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
+    .dark {
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+        --text-color-base: var(--text-color-dark-theme);
+        --text-color-light: var(--text-color-dark-theme);
+        --text-color-primary: var(--text-color-dark-theme);
+        --text-color-secondary: var(--text-color-dark-theme);
+}
+
     :root {
-        /* text color */
+        /**
+        * @tokens Text Colors
+        * @presenter Color
+        */
         --text-color-base: #000000;
-        --text-color-light: #ffffff;
         --text-color-primary: #0eaa61;
         --text-color-secondary: #1b2d55;
+        --text-color-light: #fafafa;
+        --text-color-dark-theme: #f6f9fc;
 
-        /* font size */
+        /**
+        * @tokens Font Sizes
+        * @presenter FontSize
+        */
         --font-size-tiny: 10px;
+        --font-size-small: 12px;
     }
 
     h1 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+    h6 {
+  font-size: var(--font-size-tiny);
+  line-height: 20px;
+}
 
-    .dark {
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-        --text-color-base: #f8fafc;
-        --text-color-light: #f8fafc;
-        --text-color-primary: #f8fafc;
-        --text-color-secondary: #f8fafc;
+    .font-size-small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 *, ::before, ::after {
@@ -548,6 +565,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-tiny {
   font-size: var(--font-size-tiny);
+  line-height: 20px;
 }
 .text-xs {
   font-size: 0.75rem;

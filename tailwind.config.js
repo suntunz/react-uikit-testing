@@ -11,7 +11,7 @@ module.exports = {
                 light: 'var(--text-color-light)',
             },
             fontSize: {
-                tiny: 'var(--font-size-tiny)',
+                tiny: ['var(--font-size-tiny)', '20px'],
             },
             colors: {
                 brown: {

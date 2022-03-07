@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import switchCase from '../../utils/swtich-case'
 
@@ -6,7 +6,7 @@ export interface ITextProps {
     /**
      * text label
      */
-    text: string
+    children: ReactNode
 
     /**
      * ####text size
@@ -39,7 +39,7 @@ export interface ITextProps {
 }
 
 const Text: React.FC<ITextProps> = (props) => {
-    const { text, size, color, fontFamily = '', className = null } = props
+    const { children, size, color, fontFamily, className = null } = props
 
     const fontSizeClass = switchCase(size, {
         tiny: 'text-tiny',
@@ -67,9 +67,9 @@ const Text: React.FC<ITextProps> = (props) => {
         default: '',
     })
 
-    const classNames = [fontSizeClass, fontFamilyClass, fontColorClass, className].join(' ').trim()
+    const classNames = [fontSizeClass, fontFamilyClass, fontColorClass, className].join(' ').replace(/  +/g, ' ')
 
-    return <div className={classNames}>{text}</div>
+    return <div className={classNames}>{children}</div>
 }
 
 export default Text
