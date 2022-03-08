@@ -2,7 +2,19 @@
     h1 {
         @apply text-2xl;
     }
+    h2 {
+        @apply font-size-extra-large;
+    }
+    h3 {
+        @apply font-size-large;
+    }
+    h4 {
+        @apply font-size-base;
+    }
+    h5 {
+        @apply font-size-small;
+    }
     h6 {
-        @apply text-tiny;
+        @apply font-size-extra-small;
     }
 }

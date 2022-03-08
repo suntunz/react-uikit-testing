@@ -30,6 +30,9 @@ const Template: Story<ITextProps> = (args) => {
             <Text {...args} size='tiny'>
                 Tiny size: 10px
             </Text>
+            <Text {...args} className='font-size-tiny'>
+                Tiny size 2: 10px
+            </Text>
             <Text {...args} size='xs'>
                 Extra small size: 12px
             </Text>

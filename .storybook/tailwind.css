@@ -325,21 +325,61 @@ Ensure the default browser behavior of the `hidden` attribute.
         * @tokens Font Sizes
         * @presenter FontSize
         */
-        --font-size-tiny: 10px;
-        --font-size-small: 12px;
+        --font-size-tiny: 0.625rem; /* 10px */
+        --font-size-extra-small: 0.75rem; /* 12px */
+        --font-size-small: 0.875rem; /* 14px */
+        --font-size-base: 1rem; /* 16px */
+        --font-size-large: 1.125rem; /* 18px */
+        --font-size-extra-large: 1.25rem; /* 20px */
+    }
+.font-size-tiny {
+        font-size: var(--font-size-tiny);
+        line-height: .75rem; /* .75rem, 12px */
+    }
+.font-size-extra-small {
+        font-size: var(--font-size-extra-small);
+        line-height: 1rem; /* 1rem, 16px */
     }
 .font-size-small {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
+        font-size: var(--font-size-small);
+        line-height: 1.25rem; /* 1.25rem, 20px */
+    }
+.font-size-base {
+        font-size: var(--font-size-base);
+        line-height: 1.5rem; /* 1.5rem, 24px */
+    }
+.font-size-large {
+        font-size: var(--font-size-large);
+        line-height: 1.75rem; /* 1.75rem, 28px */
+    }
+.font-size-extra-large {
+        font-size: var(--font-size-extra-large);
+        line-height: 1.75rem; /* 1.75rem, 28x */
+    }
 h1 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+h2 {
+        font-size: var(--font-size-extra-large);
+        line-height: 1.75rem; /* 1.75rem, 28x */
+    }
+h3 {
+        font-size: var(--font-size-large);
+        line-height: 1.75rem; /* 1.75rem, 28px */
+    }
+h4 {
+        font-size: var(--font-size-base);
+        line-height: 1.5rem; /* 1.5rem, 24px */
+    }
+h5 {
+        font-size: var(--font-size-small);
+        line-height: 1.25rem; /* 1.25rem, 20px */
+    }
 h6 {
-  font-size: var(--font-size-tiny);
-  line-height: 20px;
-}
+        font-size: var(--font-size-extra-small);
+        line-height: 1rem; /* 1rem, 16px */
+    }
 .dark {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
@@ -489,22 +529,6 @@ h6 {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-.text-tiny {
-  font-size: var(--font-size-tiny);
-  line-height: 20px;
-}
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .font-medium {
   font-weight: 500;

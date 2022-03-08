@@ -1,9 +1,26 @@
 @layer base {
-    .font-size-extra-small {
-        @apply text-xs;
+    .font-size-tiny {
+        font-size: var(--font-size-tiny);
+        @apply leading-3; /* .75rem, 12px */
     }
-
+    .font-size-extra-small {
+        font-size: var(--font-size-extra-small);
+        @apply leading-4; /* 1rem, 16px */
+    }
     .font-size-small {
-        @apply text-sm;
+        font-size: var(--font-size-small);
+        @apply leading-5; /* 1.25rem, 20px */
+    }
+    .font-size-base {
+        font-size: var(--font-size-base);
+        @apply leading-6; /* 1.5rem, 24px */
+    }
+    .font-size-large {
+        font-size: var(--font-size-large);
+        @apply leading-7; /* 1.75rem, 28px */
+    }
+    .font-size-extra-large {
+        font-size: var(--font-size-extra-large);
+        @apply leading-7; /* 1.75rem, 28x */
     }
 }

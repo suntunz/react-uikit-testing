@@ -42,12 +42,12 @@ const Text: React.FC<ITextProps> = (props) => {
     const { children, size, color, fontFamily, className = null } = props
 
     const fontSizeClass = switchCase(size, {
-        tiny: 'text-tiny',
-        xs: 'text-xs',
-        sm: 'text-sm',
-        base: 'text-base',
-        lg: 'text-lg',
-        xl: 'text-xl',
+        tiny: 'font-size-tiny',
+        xs: 'font-size-extra-small',
+        sm: 'font-size-small',
+        base: 'font-size-base',
+        lg: 'font-size-large',
+        xl: 'font-size-extra-large',
         default: '',
     })
 

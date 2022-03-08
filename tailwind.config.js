@@ -10,9 +10,6 @@ module.exports = {
                 secondary: 'var(--text-color-secondary)',
                 light: 'var(--text-color-light)',
             },
-            fontSize: {
-                tiny: ['var(--font-size-tiny)', '20px'],
-            },
             colors: {
                 brown: {
                     50: '#fdf8f6',

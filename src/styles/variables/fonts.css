@@ -4,7 +4,11 @@
         * @tokens Font Sizes
         * @presenter FontSize
         */
-        --font-size-tiny: 10px;
-        --font-size-small: 12px;
+        --font-size-tiny: 0.625rem; /* 10px */
+        --font-size-extra-small: 0.75rem; /* 12px */
+        --font-size-small: 0.875rem; /* 14px */
+        --font-size-base: 1rem; /* 16px */
+        --font-size-large: 1.125rem; /* 18px */
+        --font-size-extra-large: 1.25rem; /* 20px */
     }
 }
