@@ -1,12 +1,12 @@
 {
-	"name": "@bitkub-moonshot/uikit-sdk",
+	"name": "@suntunz/uikit-testing",
 	"version": "0.0.1",
 	"private": true,
 	"engines": {
 		"node": "14"
 	},
 	"repository": {
-		"url": "https://gitlab.com/bitkub-blockchain/framework/uikit-sdk",
+		"url": "https://github.com/suntunz/uikit-testing",
 		"type": "git"
 	},
 	"main": "dist/index.js",

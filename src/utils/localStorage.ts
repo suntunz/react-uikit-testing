@@ -24,7 +24,6 @@ export const getStorage = (options: ILocalStorageOptions): any => {
     if (typeof window !== 'undefined') {
         const storageKey = withPrefix ? `${PREFIX}${key}` : key // check with prefix key
         const storageValue = localStorage.getItem(storageKey)
-        // const storageValue = saved !== null && JSON.parse(saved)
 
         return storageValue
     }
